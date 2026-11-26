@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connecting… · Aura Cuts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Connecting your account…</h1>
+<p id="msg">Sending you back to Aura Cuts on your computer.</p>
+<p class="muted">If nothing happens, make sure Aura Cuts is running, then try connecting again.</p>
+<script>
+  // Forwards the login result to the Aura Cuts app running on this computer.
+  var target = 'http://localhost:8765/callback' + window.location.search;
+  window.location.replace(target);
+</script>
+</body>
+</html>
